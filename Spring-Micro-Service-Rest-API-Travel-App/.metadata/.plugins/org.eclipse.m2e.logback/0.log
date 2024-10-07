@@ -1,0 +1,31 @@
+2024-10-07 14:58:18,624 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-10-07 14:59:08,367 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:eureka-server:0.0.1-SNAPSHOT @ C:\SAI TARUN\API Endpoints and Communication-1\Projects\Spring-Micro-Service-Rest-API-Travel-App\eureka-server\pom.xml.
+2024-10-07 14:59:10,251 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /eureka-server/src/main/java
+2024-10-07 14:59:10,255 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/main/resources
+2024-10-07 14:59:10,256 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/main/resources
+2024-10-07 14:59:10,257 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /eureka-server/src/test/java
+2024-10-07 14:59:10,260 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/test/resources
+2024-10-07 14:59:10,651 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 4 sec
+2024-10-07 14:59:12,165 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-07 14:59:12,191 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-07 14:59:12,198 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SAI TARUN\API Endpoints and Communication-1\Projects\Spring-Micro-Service-Rest-API-Travel-App\eureka-server\src\test\resources
+2024-10-07 14:59:25,963 [Worker-19: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:cab-booking-micro-service:0.0.1-SNAPSHOT @ C:\SAI TARUN\API Endpoints and Communication-1\Projects\Spring-Micro-Service-Rest-API-Travel-App\cab-booking-micro-service\pom.xml.
+2024-10-07 14:59:26,684 [Worker-19: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cab-booking-micro-service/src/main/java
+2024-10-07 14:59:26,685 [Worker-19: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cab-booking-micro-service/src/main/resources
+2024-10-07 14:59:26,685 [Worker-19: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cab-booking-micro-service/src/main/resources
+2024-10-07 14:59:26,686 [Worker-19: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cab-booking-micro-service/src/test/java
+2024-10-07 14:59:26,686 [Worker-19: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cab-booking-micro-service/src/test/resources
+2024-10-07 14:59:26,919 [Worker-19: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2024-10-07 14:59:27,693 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-07 14:59:27,712 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-07 14:59:27,717 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SAI TARUN\API Endpoints and Communication-1\Projects\Spring-Micro-Service-Rest-API-Travel-App\cab-booking-micro-service\src\test\resources
+2024-10-07 14:59:39,354 [Worker-9: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:booking-micro-service:0.0.1-SNAPSHOT @ C:\SAI TARUN\API Endpoints and Communication-1\Projects\Spring-Micro-Service-Rest-API-Travel-App\booking-micro-service\pom.xml.
+2024-10-07 14:59:40,086 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /booking-micro-service/src/main/java
+2024-10-07 14:59:40,087 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /booking-micro-service/src/main/resources
+2024-10-07 14:59:40,088 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /booking-micro-service/src/main/resources
+2024-10-07 14:59:40,088 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /booking-micro-service/src/test/java
+2024-10-07 14:59:40,089 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /booking-micro-service/src/test/resources
+2024-10-07 14:59:40,365 [Worker-9: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2024-10-07 14:59:40,716 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-07 14:59:40,735 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-07 14:59:40,740 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SAI TARUN\API Endpoints and Communication-1\Projects\Spring-Micro-Service-Rest-API-Travel-App\booking-micro-service\src\test\resources
