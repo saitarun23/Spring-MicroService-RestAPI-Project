@@ -47,4 +47,9 @@ public class CabController {
 	public Cab findCabById(@PathVariable("id") int cid) {
 		return cabService.findCabById(cid);
 	}
+	
+	@GetMapping(value = "find_fare_by_cab_id/{cid}")
+    public Double findFareByCabId(@PathVariable("cid") int cid) {
+        return cabService.findFareByCabId(cid);
+    }
 }

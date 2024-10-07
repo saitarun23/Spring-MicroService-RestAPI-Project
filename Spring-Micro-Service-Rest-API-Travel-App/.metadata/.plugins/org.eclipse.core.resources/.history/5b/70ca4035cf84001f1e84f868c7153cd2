@@ -1,0 +1,50 @@
+package com.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.entity.Cab;
+import com.service.CabService;
+
+@RestController
+@RequestMapping("travel")				// http://localhost:9090/travel/*
+public class CabController {
+
+	@Autowired
+	CabService cabService;
+	
+	@PostMapping(value = "store_cab",consumes = MediaType.APPLICATION_JSON_VALUE)
+	public String storeCab(@RequestBody Cab cab) {
+		return cabService.storeCab(cab);
+	}
+	
+	@PutMapping(value="update_cab",consumes = MediaType.APPLICATION_JSON_VALUE)
+	public String updateCab(@RequestBody Cab cab) {
+		return cabService.updateCab(cab);
+	}
+	
+	@DeleteMapping(value="delete_cab/{cid}")
+	public String deleteCab(@PathVariable("cid") int cid) {
+		return cabService.deletecab(cid);
+	}
+	
+	@GetMapping(value="find_cabs",consumes = MediaType.APPLICATION_JSON_VALUE)
+	public List<Cab> findAllCabs(){
+		return cabService.findAllCabs();
+	}
+	
+	@GetMapping(value="find_cab_by_id/{id}",consumes = MediaType.APPLICATION_JSON_VALUE)
+	public Cab findCabById(@PathVariable("id") int cid) {
+		return cabService.findCabById(cid);
+	}
+}

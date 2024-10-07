@@ -57,5 +57,9 @@ public class CabService {
 			return null;
 		}
 	}
+	
+	public Double findFareByCabId(int cid) {
+        return cabRepository.findFareByCabId(cid);
+    }
 
 }

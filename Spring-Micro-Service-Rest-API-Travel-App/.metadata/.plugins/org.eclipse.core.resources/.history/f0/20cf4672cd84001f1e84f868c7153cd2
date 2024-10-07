@@ -1,0 +1,72 @@
+package com.service;
+
+import java.util.Optional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.entity.Booking;
+import com.entity.Cab;
+import com.repository.BookingRepository;
+
+@Service
+public class BookingService {
+
+	@Autowired
+	BookingRepository bookingRepository;
+	
+	@Autowired
+	RestTemplate restTemplate;
+	
+	private final String cabServiceUrl = "http://localhost:9090/travel/";
+
+    // Method to calculate fare based on booking details
+    public double calculateFare(Booking booking) {
+        // Fetch cab details using cid
+        Cab cab = restTemplate.getForObject(cabServiceUrl + booking.getCid(), Cab.class);
+
+        if (cab != null) {
+            // Calculate fare based on distance and cab fare rate
+            return cab.getFare() * booking.getDistance();
+        }
+        return 0.0; // or throw an exception if cab is not found
+    }
+
+    // Method to create a booking
+    public Booking createBooking(Booking booking) {
+        double fare = calculateFare(booking);
+        booking.setAmount(fare);
+        return bookingRepository.save(booking); // Save booking
+    }
+
+    // Example of finding balance method (not directly related, but illustrative)
+    public String findBalance(int bid) {
+        Optional<Booking> result = bookingRepository.findById(bid);
+        if (result.isPresent()) {
+            Booking booking = result.get();
+            // Assuming you have a method to fetch balance from an account service
+            String data = restTemplate.getForObject("http://localhost:9090/travel/" + booking.getCid(), String.class);
+            return data;
+        } else {
+            return "Booking not found";
+        }
+    }
+	
+	
+//	public String addBooking(Booking booking) {
+//		bookingRepository.save(booking);
+//		return "Booking details saved";
+//	}
+//	
+//	public String findCabId(int bid) {
+//		Optional<Booking> result=bookingRepository.findById(bid);
+//		if(result.isPresent()) {
+//			Booking booking=result.get();
+//			
+//			String data=restTemplate.getForObject("http://localhost:9090/travel/findCabId/"+booking.getCid(), String.class);
+//			return data;
+//		}else {
+//			return "Data not present";
+//		}
+//	}
+}
