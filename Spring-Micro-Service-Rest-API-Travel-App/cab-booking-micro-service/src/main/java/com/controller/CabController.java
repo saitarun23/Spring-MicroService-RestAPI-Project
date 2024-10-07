@@ -17,7 +17,7 @@ import com.entity.Cab;
 import com.service.CabService;
 
 @RestController
-@RequestMapping("cab")				// http://localhost:9090/cab/*
+@RequestMapping("travel")				// http://localhost:9090/travel/*
 public class CabController {
 
 	@Autowired
