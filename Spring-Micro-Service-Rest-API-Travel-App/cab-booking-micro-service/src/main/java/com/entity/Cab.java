@@ -16,5 +16,5 @@ public class Cab {
 	private String typeofcab;
 	private int seatcapacity;
 	private String company;
-	private float fare;
+	private double fare;
 }

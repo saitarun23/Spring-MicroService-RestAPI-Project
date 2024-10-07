@@ -15,7 +15,7 @@ public class Booking {
 	private int bid;
 	private String origin;
 	private String destination;
-	private String distance;
-	private float amount;
+	private double distance;
+	private double amount;
 	
 }
