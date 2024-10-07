@@ -1,0 +1,29 @@
+package com.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.entity.Booking;
+import com.repository.BookingRepository;
+
+@Service
+public class BookingService {
+
+	@Autowired
+	BookingRepository bookingRepository;
+	
+	@Autowired
+	RestTemplate restTemplate;
+	
+	 public Booking addBooking(Booking booking) {
+	        
+		 
+
+	    // Helper method to calculate fare based on cab fare rate
+	    private double calculateFare(double distance, double farePerKm) {
+	        return distance * farePerKm;
+	    }
+}

@@ -1,5 +1,6 @@
 package com.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,5 +18,6 @@ public class Booking {
 	private String destination;
 	private double distance;
 	private double amount;
-	
+	@Column(nullable = true)
+	private int cid;
 }
