@@ -1,0 +1,35 @@
+package com.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.entity.Booking;
+
+class BookingServiceTest {
+	
+	@Autowired
+	BookingService bookingService;
+
+	@Test
+	void testAddBooking() {
+		Booking b=new Booking();
+		b.setBid(3);
+		b.setOrigin("mumbai");
+		b.setDestination("pune");
+		b.setDistance(150.5);
+		b.setAmount(301000);
+		b.setCid(1);
+		String result=bookingService.addBooking(b);
+		assertEquals("booking stored", result);
+	}
+
+	@Test
+	@Disabled
+	void testFindBookingById() {
+		fail("Not yet implemented");
+	}
+
+}

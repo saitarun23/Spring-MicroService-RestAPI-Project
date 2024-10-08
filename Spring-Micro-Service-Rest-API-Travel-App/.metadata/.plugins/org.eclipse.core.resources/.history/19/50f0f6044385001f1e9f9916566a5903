@@ -1,0 +1,72 @@
+package com.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
+
+import java.util.Optional;
+
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.client.RestTemplate;
+
+import com.entity.Booking;
+import com.repository.BookingRepository;
+
+class BookingServiceTest {
+
+	@Autowired
+	BookingService bookingService;
+
+	@Autowired
+	BookingRepository bookingRepository;
+
+
+	@Test
+	void testAddBooking() {
+		Booking b = new Booking();
+		b.setBid(3);
+		b.setOrigin("mumbai");
+		b.setDestination("pune");
+		b.setDistance(150.5);
+		b.setAmount(301000);
+		b.setCid(1);
+		
+		// Mock the repository save method
+		when(bookingRepository.save(b)).thenReturn(b);
+
+		// Call the addBooking method
+		String result = bookingService.addBooking(b);
+
+		// The expected fare would be 150.5 * 200 = 30100.0
+		assertEquals("Booking details saved. Total fare: 30100.0", result);
+	}
+
+	@Test
+	@Disabled
+	void testFindBookingById() {
+		Booking b = new Booking();
+		b.setBid(3);
+		b.setOrigin("mumbai");
+		b.setDestination("pune");
+		b.setDistance(150.5);
+		b.setAmount(301000);
+		b.setCid(1);
+
+		// Mock the repository to return the booking when findById is called
+		when(bookingRepository.findById(3)).thenReturn(Optional.of(b));
+
+		// Call the method
+		Optional<Booking> result = bookingService.findBookingById(3);
+
+		// Check if the result is present and has the correct values
+		assertEquals(true, result.isPresent());
+		assertEquals(3, result.get().getBid());
+		assertEquals("mumbai", result.get().getOrigin());
+		assertEquals("pune", result.get().getDestination());
+		assertEquals(150.5, result.get().getDistance());
+		assertEquals(301000, result.get().getAmount());
+		assertEquals(1, result.get().getCid());
+	}
+
+}

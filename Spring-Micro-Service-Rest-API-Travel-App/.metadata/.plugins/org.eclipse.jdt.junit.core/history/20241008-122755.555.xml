@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BookingServiceTest" project="booking-micro-service" tests="2" started="2" failures="0" errors="0" ignored="2">
+  <testsuite name="com.service.BookingServiceTest" time="0.001" displayname="BookingServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.service.BookingServiceTest]">
+    <testcase name="testAddBooking" classname="com.service.BookingServiceTest" time="0.001" ignored="true" displayname="testAddBooking()" uniqueid="[engine:junit-jupiter]/[class:com.service.BookingServiceTest]/[method:testAddBooking()]"/>
+    <testcase name="testFindBookingById" classname="com.service.BookingServiceTest" time="0.0" ignored="true" displayname="testFindBookingById()" uniqueid="[engine:junit-jupiter]/[class:com.service.BookingServiceTest]/[method:testFindBookingById()]"/>
+  </testsuite>
+</testrun>

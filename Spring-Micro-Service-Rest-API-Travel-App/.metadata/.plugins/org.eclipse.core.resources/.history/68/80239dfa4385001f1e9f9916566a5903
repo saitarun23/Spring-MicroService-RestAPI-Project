@@ -1,0 +1,39 @@
+package com.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CabServiceTest {
+
+	@Test
+	void testStoreCab() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testUpdateCab() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testDeletecab() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testFindAllCabs() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testFindCabById() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testFindFareByCabId() {
+		fail("Not yet implemented");
+	}
+
+}

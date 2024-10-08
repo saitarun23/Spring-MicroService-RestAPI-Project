@@ -29,8 +29,8 @@ public class BookingController {
     }
 
     // Endpoint to retrieve cab details by booking ID
-    @GetMapping(value = "/find_cab_by_booking_id/{bid}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public String findCabId(@PathVariable("bid") int bid) {
-        return bookingService.findCabId(bid);
-    }
+//    @GetMapping(value = "/find_cab_by_booking_id/{bid}", produces = MediaType.APPLICATION_JSON_VALUE)
+//    public String findCabId(@PathVariable("bid") int bid) {
+//        return bookingService.findCabId(bid);
+//    }
 }

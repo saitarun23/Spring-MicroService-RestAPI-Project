@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BookingServiceTest" project="booking-micro-service" tests="2" started="2" failures="0" errors="1" ignored="1">
+  <testsuite name="com.service.BookingServiceTest" time="0.024" displayname="BookingServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.service.BookingServiceTest]">
+    <testcase name="testAddBooking" classname="com.service.BookingServiceTest" time="0.021" displayname="testAddBooking()" uniqueid="[engine:junit-jupiter]/[class:com.service.BookingServiceTest]/[method:testAddBooking()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.service.BookingService.addBooking(com.entity.Booking)" because "this.bookingService" is null&#13;
+	at com.service.BookingServiceTest.testAddBooking(BookingServiceTest.java:23)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testFindBookingById" classname="com.service.BookingServiceTest" time="0.0" ignored="true" displayname="testFindBookingById()" uniqueid="[engine:junit-jupiter]/[class:com.service.BookingServiceTest]/[method:testFindBookingById()]"/>
+  </testsuite>
+</testrun>

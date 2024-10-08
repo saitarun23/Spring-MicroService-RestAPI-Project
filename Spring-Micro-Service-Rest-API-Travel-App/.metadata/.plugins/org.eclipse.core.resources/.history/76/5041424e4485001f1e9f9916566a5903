@@ -1,0 +1,57 @@
+package com.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.entity.Cab;
+import com.repository.CabRepository;
+
+class CabServiceTest {
+	
+	@Autowired
+	CabService cabService;
+	
+	@Autowired
+	CabRepository cabRepository;
+	
+	
+	@Test
+	void testStoreCab() {
+	Cab	 cab = new Cab();
+	        cab.setCid(1);
+	        cab.setCompany(" mahindra");
+	        cab.setFare(2000);
+	        cab.setSeatcapacity(6);
+	        cab.setTypeofcab("xuv");
+	}
+
+	@Test
+	@Disabled
+	void testUpdateCab() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testDeletecab() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testFindAllCabs() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testFindCabById() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testFindFareByCabId() {
+		fail("Not yet implemented");
+	}
+
+}

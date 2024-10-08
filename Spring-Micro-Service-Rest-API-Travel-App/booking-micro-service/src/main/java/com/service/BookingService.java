@@ -40,14 +40,14 @@ public class BookingService {
     }
 
     // Method to retrieve cab details by booking ID
-    public String findCabId(int bid) {
-        Optional<Booking> result = bookingRepository.findById(bid);
-        if (result.isPresent()) {
-            Booking booking = result.get();
-            String data = restTemplate.getForObject("http://localhost:9090/travel/find_cab_by_id/" + booking.getCid(), String.class);
-            return data;
-        } else {
-            return "Data not present";
-        }
-    }
+//    public String findCabId(int bid) {
+//        Optional<Booking> result = bookingRepository.findById(bid);
+//        if (result.isPresent()) {
+//            Booking booking = result.get();
+//            String data = restTemplate.getForObject("http://localhost:9090/travel/find_cab_by_id/" + booking.getCid(), String.class);
+//            return data;
+//        } else {
+//            return "Data not present";
+//        }
+//    }
 }
